@@ -4,12 +4,14 @@ const projects = [
     {
         name: 'TETRA',
         link: '',
+        demoLink: 'test',
         description: 'Audio visualizer dynamically animated purely with CSS. A proof of concept for doing nontrival math using only CSS.',
         technologies: ['CSS', 'Web Audio API']
     },
     {
         name: 'time.claps',
         link: '',
+        demoLink: 'test',
         description: 'Web app used to display a synchronized countdown. Created to help coordinate certain activities with friends remotely, such as playing videos or syncing local audio recordings.',
         technologies: ['React', 'express']
     },
@@ -22,6 +24,7 @@ const projects = [
     {
         name: 'ocean',
         link: '',
+        demoLink: 'test',
         description: 'First-person audio visualizer made in Unity. Made with easily configurable settings to change the visuals to fit any song.',
         technologies: ['Unity']
     },
@@ -33,7 +36,10 @@ export default () => {
         return <div key={i} className={'personal--project'}>
             <div className={'personal--repo-technologies'}>
                 <h2 className={'personal--name'}>{project.name}</h2>
-                <a href={project.link} className={'personal--repo'}><Icon icon={'github'}/><span>{'GitHub'}</span></a>
+                <div className={'personal--links'}>
+                    <a href={project.link} className={'personal--link'}><Icon icon={'github'}/><span>{'GitHub'}</span></a>
+                    {project.demoLink ? <a href={project.link} className={'personal--link'}><Icon icon={'links'}/><span>{'Demo'}</span></a> : undefined}
+                </div>
             </div>
             <div className={'personal--technologies'}>{project.technologies.join(' • ')}</div>
             <p className={'personal--description'}>{project.description}</p>

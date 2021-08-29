@@ -50,7 +50,7 @@ export default () => {
                 <Icon icon={'contacts-book'}/>
                 <div className={'work--contact-info'}>
                     <div className={'work--contact-name'}>{job.contact}</div>
-                    <div className={'work--contact-email'}>{job.contactEmail}</div>
+                    <a className={'work--contact-email'} href={'mailto:' + job.contactEmail}>{job.contactEmail}</a>
                 </div>
             </div>
             {list}
