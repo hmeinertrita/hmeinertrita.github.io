@@ -1,10 +1,10 @@
-import Icon from "./Icon"
+import PrinterLink from "./PrinterLink"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
     <div className={'footer'}>
-        <span>{'Resume built and designed from the ground up by me using React'}</span>
-        <a href={'https://www.github.com'} className={'footer--link'}><Icon icon={'links'}/><span>{'View in browser'}</span></a>
-        <a href={'https://www.github.com'} className={'footer--link'}><Icon icon={'github'}/><span>{'View GitHub Repository'}</span></a>
+        <span>{'Resume designed and built from the ground up by me using React'}</span>
+        <PrinterLink className={'footer--link'} url={'https://www.github.com'} text={'View in browser'} prependIcon={'links'}/>
+        <PrinterLink className={'footer--link'} url={'https://www.github.com'} text={'Visit GitHub repository'} prependIcon={'github'}/>
     </div>
 )

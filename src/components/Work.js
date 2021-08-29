@@ -1,4 +1,5 @@
 import Icon from "./Icon"
+import PrinterLink from "./PrinterLink"
 
 const jobs = [
     {
@@ -50,7 +51,7 @@ export default () => {
                 <Icon icon={'contacts-book'}/>
                 <div className={'work--contact-info'}>
                     <div className={'work--contact-name'}>{job.contact}</div>
-                    <a className={'work--contact-email'} href={'mailto:' + job.contactEmail}>{job.contactEmail}</a>
+                    <PrinterLink className={'work--contact-email'} url={'mailto:' + job.contactEmail}/>
                 </div>
             </div>
             {list}

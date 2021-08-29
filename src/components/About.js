@@ -1,4 +1,5 @@
 import Icon from "./Icon"
+import PrinterLink from "./PrinterLink"
 
 const about = [
     'I am Software Engineer dedicated to creating new and interesting things.',
@@ -13,9 +14,9 @@ export default () => (
         <div className={'about--contact-heading'}>
             <h1 className={'about--heading'}>{'About Me'}</h1>
             <div className={'about--contact'}>
-                <a className={'about--contact-item'} href={'https://www.github.com/hmeinertrita'}><span>{'github.com/hmeinertrita'}</span><Icon icon={'github'}/></a>
-                <a className={'about--contact-item'} href={'https://www.linkedin.com/in/hmeinertrita'}><span>{'linkedin.com/in/hmeinertrita'}</span><Icon icon={'linkedin'}/></a>
-                <a className={'about--contact-item'} href={'mailto:hmeinertrita@gmail.com'}><span>{'hmeinertrita@gmail.com'}</span><Icon icon={'mail-send'}/></a>
+                <PrinterLink className={'about--contact-item'} url={'https://www.github.com/hmeinertrita'} text={'GitHub Repositories'} appendIcon={'github'}/>
+                <PrinterLink className={'about--contact-item'} url={'https://www.linkedin.com/in/hmeinertrita'} text={'LinkedIn Profile'} appendIcon={'linkedin'}/>
+                <PrinterLink className={'about--contact-item'} url={'mailto:hmeinertrita@gmail.com'} appendIcon={'mail-send'}/>
                 <div className={'about--contact-item'}><span>{'1-585-733-3463'}</span><Icon icon={'phone'}/></div>
             </div>
         </div>

@@ -40,6 +40,18 @@ a span {
   text-decoration: underline;
 }
 
+@media print {
+  .printer--hide {
+    display: none !important;
+  }
+}
+
+@media not print {
+  .printer--show {
+    display: none !important;
+  }
+}
+
 .heading--body {
   margin-bottom: 12px;
 }
@@ -138,7 +150,7 @@ a span {
 }
 
 .skills--lang.skills--skill-item {
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .skills--lang.skills--skill-item ~ .skills--lang.skills--skill-item {
@@ -272,6 +284,25 @@ a span {
 .personal--link {
   display: flex;
   align-items: center;
+  font-size: 12px;
+}
+
+@media print {
+  .personal--link {
+    font-size: 8px;
+  }
+  .personal--link ~ .personal--link {
+    margin-left: 0 !important;
+  }
+  .personal--links i {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .personal--links {
+    flex-direction: column;
+    margin-left: 6px;
+    padding-left: 6px;
+  }
 }
 
 .personal--link ~ .personal--link {

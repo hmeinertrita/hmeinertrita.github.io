@@ -1,23 +1,23 @@
-import Icon from "./Icon"
+import PrinterLink from "./PrinterLink"
 
 const projects = [
     {
         name: 'TETRA',
-        link: '',
+        link: 'https://github.com/hmeinertrita/TETRA',
         demoLink: 'test',
         description: 'Audio visualizer dynamically animated purely with CSS. A proof of concept for doing nontrival math using only CSS.',
         technologies: ['CSS', 'Web Audio API']
     },
     {
         name: 'time.claps',
-        link: '',
-        demoLink: 'test',
+        link: 'https://github.com/hmeinertrita/time.claps',
+        demoLink: 'https://time-clap.glitch.me',
         description: 'Web app used to display a synchronized countdown. Created to help coordinate certain activities with friends remotely, such as playing videos or syncing local audio recordings.',
         technologies: ['React', 'express']
     },
     {
         name: 'ADALIN',
-        link: 'https://github.com/hmeinertrita/ADALIN',
+        link: 'https://www.github.com/hmeinertrita/ADALIN',
         description: 'Discord bot integrated with a Dialogflow agent and a wiki. Can answer freeform questions about the contents of the wiki through text or speech recognition.',
         technologies: ['Dialogflow', 'Discord.js', 'Google Speech API']
     },
@@ -37,8 +37,8 @@ export default () => {
             <div className={'personal--repo-technologies'}>
                 <h2 className={'personal--name'}>{project.name}</h2>
                 <div className={'personal--links'}>
-                    <a href={project.link} className={'personal--link'}><Icon icon={'github'}/><span>{'GitHub'}</span></a>
-                    {project.demoLink ? <a href={project.link} className={'personal--link'}><Icon icon={'links'}/><span>{'Demo'}</span></a> : undefined}
+                    <PrinterLink className={'personal--link'} url={project.link} text={'GitHub'} prependIcon={'github'}/>
+                    {project.demoLink ? <PrinterLink className={'personal--link'} url={project.demoLink} text={'Demo'} prependIcon={'links'}/> : undefined}
                 </div>
             </div>
             <div className={'personal--technologies'}>{project.technologies.join(' • ')}</div>
