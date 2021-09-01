@@ -4,7 +4,7 @@ const projects = [
     {
         name: 'TETRA',
         link: 'https://github.com/hmeinertrita/TETRA',
-        demoLink: 'test',
+        demoLink: 'https://hmeinertrita.github.io/TETRA/',
         description: 'Audio visualizer dynamically animated purely with CSS. A proof of concept for doing nontrival math using only CSS.',
         technologies: ['CSS', 'Web Audio API']
     },
@@ -23,8 +23,8 @@ const projects = [
     },
     {
         name: 'ocean',
-        link: '',
-        demoLink: 'test',
+        link: 'https://www.github.com/hmeinertrita/ocean',
+        demoLink: 'https://hmeinertrita.github.io/ocean/',
         description: 'First-person audio visualizer made in Unity. Made with easily configurable settings to change the visuals to fit any song.',
         technologies: ['Unity']
     },
