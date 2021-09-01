@@ -329,7 +329,6 @@ a span {
   margin-right: 2px;
 }
 
-/*
 @media print {
   .personal--link {
     font-size: 8px;
@@ -358,8 +357,4 @@ a span {
   .printer--hide {
     display: none !important;
   }
-}
-*/
-.printer--show {
-  display: none !important;
 }
