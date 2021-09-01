@@ -10,6 +10,9 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: grey;
+  --body-text: #494052;
+  --primary-contrast: #AC89D1;
+  --secondary-contrast: #F291B7;
 }
 
 h1 {
@@ -17,7 +20,7 @@ h1 {
   margin: 0;
   text-transform: uppercase;
   font-size: 26px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--body-text);
 }
 
 h2 {
@@ -34,22 +37,15 @@ p, li {
 
 a {
   text-decoration: none;
+  color: var(--primary-contrast);
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 a span {
   text-decoration: underline;
-}
-
-@media print {
-  .printer--hide {
-    display: none !important;
-  }
-}
-
-@media not print {
-  .printer--show {
-    display: none !important;
-  }
 }
 
 .heading--body {
@@ -74,7 +70,7 @@ a span {
 .info {
   padding: 18px 24px;
   padding-bottom: 8px;
-  border: 2px solid black;
+  border: 2px solid var(--body-text);
   display: flex;
 }
 
@@ -104,7 +100,7 @@ a span {
   margin-bottom: 2px;
   margin-top: 6px;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .skills--scale {
@@ -112,14 +108,14 @@ a span {
   display: flex;
   justify-content: space-between;
   height: 2px;
-  background-color: black;
+  background-color: var(--body-text);
   align-items: flex-start;
   margin-bottom: 40px;
 }
 
 .skills--tick {
   width: 2px;
-  background-color: black;
+  background-color: var(--body-text);
   position: relative;
   height: 0px;
   margin-top: 2px;
@@ -141,12 +137,12 @@ a span {
 
 .skills--proficiency-foreground {
   width: var(--proficiency);
-  background: blue;
+  background: var(--primary-contrast);
   height: 100%;
 }
 
 .skills--lang .skills--proficiency-foreground {
-  background: green;
+  background: var(--secondary-contrast);
 }
 
 .skills--lang.skills--skill-item {
@@ -165,7 +161,7 @@ a span {
 .name--picture {
   width: 140px;
   height: 140px;
-  background: blue;
+  background: var(--primary-contrast);
   border-radius: 50%;
   margin: 0 34px;
 }
@@ -179,8 +175,8 @@ a span {
   margin: 0 24px;
   height: 100px;
   flex-grow: 1;
-  border: 4px solid blue;
-  color: blue;
+  border: 4px solid var(--primary-contrast);
+  color: var(--primary-contrast);
   text-transform: uppercase;
   justify-content: center;
   display: flex;
@@ -190,7 +186,7 @@ a span {
 }
 
 .about {
-  background: blue;
+  background: var(--primary-contrast);
   color: white;
   display: flex;
   align-items: stretch;
@@ -216,7 +212,7 @@ a span {
 
 .about--contact-item {
   display: flex;
-  color: white;
+  color: white !important;
   align-items: center;
 }
 
@@ -269,7 +265,7 @@ a span {
 
 .personal--links {
   margin-left: 10px;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--body-text);
   padding-left: 10px;
   display: flex;
   justify-content: center;
@@ -285,24 +281,6 @@ a span {
   display: flex;
   align-items: center;
   font-size: 12px;
-}
-
-@media print {
-  .personal--link {
-    font-size: 8px;
-  }
-  .personal--link ~ .personal--link {
-    margin-left: 0 !important;
-  }
-  .personal--links i {
-    font-size: 14px;
-    margin-right: 2px;
-  }
-  .personal--links {
-    flex-direction: column;
-    margin-left: 6px;
-    padding-left: 6px;
-  }
 }
 
 .personal--link ~ .personal--link {
@@ -348,4 +326,39 @@ a span {
 
 .footer--link i {
   margin-right: 2px;
+}
+
+/*
+@media print {
+  .personal--link {
+    font-size: 8px;
+  }
+  .personal--link ~ .personal--link {
+    margin-left: 0 !important;
+  }
+  .personal--links i {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .personal--links {
+    flex-direction: column;
+    margin-left: 6px;
+    padding-left: 6px;
+  }
+}
+
+@media not print {
+  .printer--show {
+    display: none !important;
+  }
+}
+
+@media print {
+  .printer--hide {
+    display: none !important;
+  }
+}
+*/
+.printer--show {
+  display: none !important;
 }
