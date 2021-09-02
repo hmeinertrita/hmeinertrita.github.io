@@ -8,7 +8,7 @@ const jobs = [
         title: 'Data Wrangler & AR Developer',
         contact: 'Matthew Seymour',
         contactTitle: 'General Manager VR/AR, Free Range Games',
-        contactEmail: 'm_seymour@me.com',
+        contactEmail: 'matthew@freerangegames.com',
         items: [
             'Worked in the Real-time Interactive group at renowned commercial & game content studio Psyop\'s LA division',
             'Data wrangler for mocap data on a AAA video game project. Attended motion capture shoots and processed all data and footage for use in animation, client review, and Unreal.',
