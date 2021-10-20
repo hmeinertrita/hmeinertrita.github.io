@@ -24,7 +24,7 @@ const jobs = [
         contactEmail: 'yashar@myplanet.com',
         items: [
             'Front-end lead on a project for a national telecom company developing a high profile customer facing, medical web application. Worked onsite at client\'s headquarters as primary liaison for front-end implementation.',
-            'Front-end developer and DevOps lead launching an eCommerce website for a new retail brand. Set up and maintained a continuous deployment pipeline using GitHub and AWS. Reseached and integrated various headless eCommerce platorms.'
+            'Front-end developer and DevOps lead launching an eCommerce website for a new retail brand. Set up and maintained a continuous deployment pipeline using GitHub and AWS. Researched and integrated various headless eCommerce platforms.'
         ]
     },
     // {
