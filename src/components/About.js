@@ -4,7 +4,7 @@ import PrinterLink from "./PrinterLink"
 const about = [
     'I am Software Engineer dedicated to creating new and interesting experiences.',
     'My goal is always to build something unique and exciting for anyone using what I make.',
-    'I\'ve multidisciplinary teams as well as working independently and I am comfortable with both.',
+    'I\'ve worked with multidisciplinary teams as well as independently and I am comfortable with both.',
     'I am committed to finishing tasks to a high standard, motivated and quick to learn new skills and technology, and to find creative solutions to problems.'
 ].join(' ')
 
